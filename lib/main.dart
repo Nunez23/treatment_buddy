@@ -1,21 +1,18 @@
 import 'package:flutter/material.dart';
-
 import 'ui/patient_information/patient_information.page.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const TreatmentApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-  // This widget is the root of your application.
+class TreatmentApp extends StatelessWidget {
+  const TreatmentApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Treatment Buddy',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: ThemeData(primarySwatch: Colors.blue),
       home: const PatientListPage(),
     );
   }
