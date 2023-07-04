@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:faker/faker.dart';
-import 'package:treatment_buddy/data/patient_information.dart';
 
 class PatientListPage extends StatelessWidget {
+  const PatientListPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -12,7 +13,7 @@ class PatientListPage extends StatelessWidget {
         itemBuilder: (context, index) {
           return Center(
             child: Text(
-              faker.person.firstName() + ' ' + faker.person.lastName(),
+              '${faker.person.firstName()} ${faker.person.lastName()}',
             ),
           );
         },
